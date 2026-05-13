@@ -136,7 +136,19 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return
 
-    await update.message.reply_text("🎉 Welcome To Earning Bot", reply_markup=menu())
+    await update.message.reply_text(
+    "🎉 Welcome to Task Hub Rewards 🎉\n\n"
+    "💸 Complete daily tasks and earn exciting rewards instantly!\n\n"
+    "🔥 Features:\n"
+    "• Random Daily Rewards\n"
+    "• Referral Earnings\n"
+    "• Wallet System\n"
+    "• Fast Withdrawals\n"
+    "• Trusted Community\n\n"
+    "📢 Before starting, please join our official channels to unlock the bot.\n\n"
+    "✅ After joining, click the “Joined” button below and start earning rewards today 🚀",
+    reply_markup=menu()
+    )
 
 
 async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
